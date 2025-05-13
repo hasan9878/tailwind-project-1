@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+
+   
+
+   <title>tailwind Project</title>
+
+</head>
+<body class="bg-white dark:bg-black">
+ 
+ 
+
+
+  <header class="bg-gray-100 dark:bg-gray-800 py-4 sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4">
+        <div class="flex items-center ">
+            <img src="images/logo.png" alt="Logo" class="h-8 w-auto mr-2 bg-gray-100">
+            <span class="font-bold text-gray-800 dark:text-gray-100 "></span>
+        </div>
+
+        <nav class="hidden md:flex space-x-6 text-gray-600 dark:text-gray-300">
+            <a href="#" class="hover:text-gray-800 dark:hover:text-gray-100">Home</a>
+            <a href="#" class="hover:text-gray-800 dark:hover:text-gray-100">About Us</a>
+            <a href="#" class="text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-500">Upskill</a>
+            <a href="#" class="hover:text-gray-800 dark:hover:text-gray-100">Contact us</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+           <button class="bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded w-full sm:w-auto text-sm sm:text-base transition duration-300">
+  Register Interest
+</button>
+
+            <button id="btn" class="text-gray-500 dark:text-gray-400 focus:outline-none md:text-4xl">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.749-3.753A9.713 9.713 0 003 11.25c0 5.385 4.365 9.75 9.75 9.75a9.717 9.717 0 006.751-1.498z" />
+                </svg>
+            </button>
+        </div>
+
+        
+      
+    </div>
+
+    </header>
+
+
+
+
+
+
+
+    
+
+
+<script>
+    const btn = document.getElementById("btn")
+    btn.addEventListener("click",function(){
+        
+        document.querySelector("html").classList.toggle("dark")
+    })
+      </script>
+
+
+
+</body>
+</html>
